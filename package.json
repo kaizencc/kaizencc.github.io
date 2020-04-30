@@ -4,9 +4,16 @@
   "homepage": "https:///kaizen3031593.github.io/",
   "private": true,
   "dependencies": {
+    "@elastic/datemath": "^5.0.3",
+    "@elastic/eui": "^22.3.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "moment": "^2.24.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
