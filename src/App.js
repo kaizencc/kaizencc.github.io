@@ -7,7 +7,6 @@ import {
   EuiIcon,
   EuiImage,
   EuiListGroup,
-  EuiListGroupItem,
   EuiText,
   EuiTitle,
   EuiPage,
@@ -16,41 +15,48 @@ import {
   EuiPageHeaderSection,
   EuiPageSideBar,
   EuiSideNav,
-  EuiHeader,
-  EuiHeaderSectionItem,
-  EuiHeaderLogo,
-  EuiHeaderLink,
-  EuiHeaderLinks,
   EuiSpacer,
 } from '@elastic/eui';
 import Header from './Header';
 import PageSection from './PageSection';
 
-import williamsSvg from './williams.svg';
-import juniSvg from './juni1.png';
-import williams from './Williams1.png';
-import kaizen from './kaizen_linkedin.jpg';
-import columbia from './columbia.jpg';
-import sas from './sas_logo2.jpg';
-import linkedin from './linkedin.png';
-import wufo from './wufo.jpg';
-import piano from './piano.jpg';
-import taiwan from './taiwan.png';
+import williamsSvg from './images/williams.svg';
+import juniSvg from './images/juni1.png';
+import kaizen from './images/kaizen_face.jpg';
+import columbia from './images/columbia.jpg';
+import sas from './images/sas_logo2.jpg';
+import wufo from './images/wufo.jpg';
+import piano from './images/piano.jpg';
+import taiwan from './images/taiwan.png';
 
 // get our fontawesome imports
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Other themes are also available - see files at
 // node_modules/@elastic/eui/dist/
 import '@elastic/eui/dist/eui_theme_light.css';
 import './App.css';
 
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
+import {faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+
 const App = () => {
   const sections = ['About Me', 'Experience', 'Projects', 'Education', 'Extracurriculars', 'Contact Me'];
 
   const toHref = (title) => {
     return '#' + title.toLowerCase().split(' ').join('-');
+  };
+
+  const makeIcon = (inputIcon) => {
+    return (
+      <svg
+        className='euiIcon euiIcon--medium euiIcon-isLoaded euiListGroupItem__icon'
+        viewBox='0 0 512 512'>
+        <path d={inputIcon.icon[4]} />
+      </svg>
+    );
   };
 
   const navItems = sections.map((section) => ({
@@ -78,20 +84,6 @@ const App = () => {
 
   return (
     <div className='App'>
-    <EuiHeader>
-        <EuiHeaderSectionItem border="right">
-          <EuiHeaderLogo
-            iconType='logoGmail'
-            href="#"
-          />
-        </EuiHeaderSectionItem>
-
-        <EuiHeaderLinks>
-          <EuiHeaderLink href="#">
-          Resume
-          </EuiHeaderLink>
-        </EuiHeaderLinks>
-      </EuiHeader>
       <Header sections={sections} className='sticky'
       />
       <EuiPage restrictWidth={true}>
@@ -350,19 +342,19 @@ const App = () => {
                   label: 'zen.conroy@gmail.com',
                   href: '#',
                   color: "text",
-                  iconType: 'logoGmail',
+                  iconType: () => makeIcon(faEnvelopeSquare),
                 },
                 {
                   label: '@kaizen3031593',
                   href: 'https://github.com/kaizen3031593',
                   color: "text",
-                  iconType: 'logoGithub',
+                  iconType: () => makeIcon(faGithubSquare),
                 },
                 {
-                  label: 'LinkedIn',
+                  label: '@kaizenconroy',
                   href: 'https://linkedin.com/in/kaizenconroy',
                   color: "text",
-                  iconType: 'logoGmail',
+                  iconType: () => makeIcon(faLinkedin),
                 }]
               }
             />
