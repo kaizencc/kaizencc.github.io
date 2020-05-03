@@ -92,7 +92,7 @@ const App = () => {
           </EuiHeaderLink>
         </EuiHeaderLinks>
       </EuiHeader>
-      <Header sections={sections} className='sticky' 
+      <Header sections={sections} className='sticky'
       />
       <EuiPage restrictWidth={true}>
         <EuiPageSideBar>
@@ -100,6 +100,7 @@ const App = () => {
           size="l"
           alt={'Kaizen Conroy'}
           url={kaizen}
+          style={{ borderRadius: '50%', objectFit: 'cover' }}
           />
           <EuiSpacer />
           <EuiSideNav items={navItems} />
