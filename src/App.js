@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   EuiButton,
   EuiCard,
@@ -16,18 +16,24 @@ import {
   EuiPageSideBar,
   EuiSideNav,
   EuiSpacer,
+  EuiPopover,
+  EuiPopoverTitle,
 } from '@elastic/eui';
 import Header from './Header';
 import PageSection from './PageSection';
 
 import williamsSvg from './images/williams.svg';
 import juniSvg from './images/juni1.png';
+import poker from './images/poker.png';
 import kaizen from './images/kaizen_face.jpg';
 import columbia from './images/columbia.jpg';
 import sas from './images/sas_logo2.jpg';
 import wufo from './images/wufo.jpg';
 import piano from './images/piano.jpg';
 import taiwan from './images/taiwan.png';
+import conways from './images/conways.gif';
+import ios from './images/ios.png';
+import micro from './images/microservice.png';
 
 // get our fontawesome imports
 //import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -38,9 +44,9 @@ import taiwan from './images/taiwan.png';
 import '@elastic/eui/dist/eui_theme_light.css';
 import './App.css';
 
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
-import {faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const App = () => {
   const sections = ['About Me', 'Experience', 'Projects', 'Education', 'Extracurriculars', 'Contact Me'];
@@ -58,6 +64,14 @@ const App = () => {
       </svg>
     );
   };
+
+  const [isPopoverOpen1, setIsPopoverOpen1] = useState(false);
+  const onButtonClick1 = () => setIsPopoverOpen1(isPopoverOpen1 => !isPopoverOpen1);
+  const closePopover1 = () => setIsPopoverOpen1(false);
+
+  const [isPopoverOpen2, setIsPopoverOpen2] = useState(false);
+  const onButtonClick2 = () => setIsPopoverOpen2(isPopoverOpen2 => !isPopoverOpen2);
+  const closePopover2 = () => setIsPopoverOpen2(false);
 
   const navItems = sections.map((section) => ({
     name: section,
@@ -198,36 +212,74 @@ const App = () => {
             <EuiFlexGroup gutterSize='l'>
               <EuiFlexItem>
                 <EuiCard
-                  image = {williamsSvg}
+                  image = {ios}
                   title='Ticket To Ride Board Builder'
                   description='iOS, Swift, XCode'
-                  footer={<EuiButton aria-label='Go to Developers Tools'>See it</EuiButton>}
+                  footer={<EuiPopover
+                            ownFocus
+                            button={
+                              <EuiButton
+                                iconSide="right"
+                                onClick={onButtonClick1}>
+                                See it
+                              </EuiButton>
+                            }
+                            isOpen={isPopoverOpen1}
+                            closePopover={closePopover1}
+                            anchorPosition="upCenter"
+                            panelPaddingSize="s">
+                            <EuiPopoverTitle>Private Github Repository</EuiPopoverTitle>
+                            <div style={{ width: '300px' }}>
+                              <EuiText>
+                                <p>Please contact me for code</p>
+                              </EuiText>
+                            </div>
+                          </EuiPopover>}
                 />
               </EuiFlexItem>
               <EuiFlexItem>
                 <EuiCard
-                  image = {williamsSvg}
+                  image = {micro}
                   title='Microservice Application'
                   description='Python, Flask, MySQL, AWS'
-                  footer={<EuiButton aria-label='Go to Developers Tools'>See it</EuiButton>}
+                  footer={<EuiPopover
+                            ownFocus
+                            button={
+                              <EuiButton
+                                iconSide="right"
+                                onClick={onButtonClick2}>
+                                See it
+                              </EuiButton>
+                            }
+                            isOpen={isPopoverOpen2}
+                            closePopover={closePopover2}
+                            anchorPosition="upCenter"
+                            panelPaddingSize="s">
+                            <EuiPopoverTitle>Private Github Repository</EuiPopoverTitle>
+                            <div style={{ width: '300px' }}>
+                              <EuiText>
+                                <p>Please contact me for code</p>
+                              </EuiText>
+                            </div>
+                          </EuiPopover>}
                 />
               </EuiFlexItem>
             </EuiFlexGroup>
             <EuiFlexGroup gutterSize='l'>
             <EuiFlexItem>
               <EuiCard
-                image = {williamsSvg}
+                image = {poker}
                 title='Heads-Up Poker AI'
                 description='Python'
-                footer={<EuiButton aria-label='Go to Developers Tools'>See it</EuiButton>}
+                footer={<EuiButton href="https://github.com/kaizen3031593/Poker-Project">See it</EuiButton>}
               />
             </EuiFlexItem>
             <EuiFlexItem>
               <EuiCard
-                image = {williamsSvg}
+                image = {conways}
                 title='Juni Learning Curriculum'
                 description='Python'
-                footer={<EuiButton aria-label='Go to Developers Tools'>See it</EuiButton>}
+                footer={<EuiButton href="https://github.com/kaizen3031593/Curriculum-Development">See it</EuiButton>}
               />
             </EuiFlexItem>
             </EuiFlexGroup>
@@ -277,7 +329,7 @@ const App = () => {
             <EuiText size="s">
               <ul>
                 <li>Graduated <i> summa cum laude </i> with 3.92 unweighted GPA.</li>
-                <li>2-year Captain and MVP of Varsity Baseball Team.</li>
+                <li>Averaged 4.82 score on 11 AP tests.</li>
               </ul>
             </EuiText>
             </EuiCard>
@@ -342,19 +394,19 @@ const App = () => {
                   label: 'zen.conroy@gmail.com',
                   href: '#',
                   color: "text",
-                  iconType: () => makeIcon(faEnvelopeSquare),
+                  iconType: () => makeIcon(faEnvelope),
                 },
                 {
                   label: '@kaizen3031593',
                   href: 'https://github.com/kaizen3031593',
                   color: "text",
-                  iconType: () => makeIcon(faGithubSquare),
+                  iconType: () => makeIcon(faGithub),
                 },
                 {
                   label: '@kaizenconroy',
                   href: 'https://linkedin.com/in/kaizenconroy',
                   color: "text",
-                  iconType: () => makeIcon(faLinkedin),
+                  iconType: () => makeIcon(faLinkedinIn),
                 }]
               }
             />
