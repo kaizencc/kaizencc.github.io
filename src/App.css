@@ -3,13 +3,20 @@
   top: 0;
 }
 
-.euiPageSideBar {
-  position: fixed;
-  display: block;
-  top: 80px;
-  bottom: 0;
-  width: 240px;
+@media (min-width: 767px) {
+  .euiPageSideBar {
+    position: fixed;
+    display: block;
+    top: 80px;
+    bottom: 0;
+    width: 240px;
+  }
+  .euiPageBody {
+    margin-left: 280px;
+  }
 }
-.euiPageBody {
-  margin-left: 280px;
+@media (max-width: 767px) {
+  .euiSideNav {
+    display: none;
+  }
 }

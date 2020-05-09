@@ -5,8 +5,11 @@ import {
   EuiHeaderLinks,
   EuiHeaderLogo,
   EuiHeaderSectionItem,
+  EuiButton,
 } from '@elastic/eui';
 import PropTypes from 'prop-types';
+
+import resume from './Kaizen_Conroy_Fall_2020_Resume.pdf';
 
 const HeaderLink = ({ title }) => {
   const titleHref = () => {
@@ -34,6 +37,9 @@ const Header = ({ sections, className }) => {
           <HeaderLink title={section} key={section} />
         ))}
       </EuiHeaderLinks>
+      <EuiHeaderSectionItem>
+      <EuiButton href={resume} iconType="arrowRight" color="text"> Resume </EuiButton>
+      </EuiHeaderSectionItem>
     </EuiHeader>
   );
 };

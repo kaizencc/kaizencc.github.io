@@ -35,6 +35,8 @@ import conways from './images/conways.gif';
 import ios from './images/ios.png';
 import micro from './images/microservice.png';
 
+import resume from './Kaizen_Conroy_Fall_2020_Resume.pdf';
+
 // get our fontawesome imports
 //import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
