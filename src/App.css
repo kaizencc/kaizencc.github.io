@@ -2,3 +2,14 @@
   position: sticky;
   top: 0;
 }
+
+.euiPageSideBar {
+  position: fixed;
+  display: block;
+  top: 80px;
+  bottom: 0;
+  width: 240px;
+}
+.euiPageBody {
+  margin-left: 280px;
+}
