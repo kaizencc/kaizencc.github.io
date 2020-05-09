@@ -5,6 +5,7 @@ import {
   EuiHeaderLinks,
   EuiHeaderLogo,
   EuiHeaderSectionItem,
+  EuiHeaderSectionItemButton,
   EuiButton,
 } from '@elastic/eui';
 import PropTypes from 'prop-types';
@@ -38,7 +39,9 @@ const Header = ({ sections, className }) => {
         ))}
       </EuiHeaderLinks>
       <EuiHeaderSectionItem>
+      &emsp;
       <EuiButton href={resume} iconType="arrowRight" color="text"> Resume </EuiButton>
+      &emsp;
       </EuiHeaderSectionItem>
     </EuiHeader>
   );
