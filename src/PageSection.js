@@ -10,10 +10,10 @@ const PageSection = ({ title, children }) => {
   const titleID = () => title.toLowerCase().split(' ').join('-');
 
   return (
-    <EuiPageContent id={titleID()}>
+    <EuiPageContent>
       <EuiPageContentHeader>
         <EuiPageContentHeaderSection>
-          <EuiTitle>
+          <EuiTitle id={titleID()}>
             <h2>{title}</h2>
           </EuiTitle>
         </EuiPageContentHeaderSection>
