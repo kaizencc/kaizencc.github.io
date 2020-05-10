@@ -18,6 +18,7 @@ import {
   EuiSpacer,
   EuiPopover,
   EuiPopoverTitle,
+  EuiButtonEmpty,
 } from '@elastic/eui';
 import Header from './Header';
 import PageSection from './PageSection';
@@ -285,6 +286,14 @@ const App = () => {
               />
             </EuiFlexItem>
             </EuiFlexGroup>
+            <EuiSpacer />
+            <EuiText>
+              <p>Check out more (including this project) at my github: <EuiButtonEmpty iconType="logoGithub"
+                                                                                  color="text"
+                                                                                  size = "s"
+                                                                                  href="https://github.com/kaizen3031593">
+                                                                                  </EuiButtonEmpty></p>
+            </EuiText>
           </PageSection>
           <EuiSpacer />
 
