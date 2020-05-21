@@ -2,6 +2,8 @@
 
 I created this web app to showcase my experience as well as to learn core web development technologies like HTML, CSS, and Javascript.
 
+Visit the website at [kaizen3031593.github.io](http://kaizen3031593.github.io/ "Kaizen") 
+
 ## Technologies Used:
 
 * React
