@@ -33,7 +33,7 @@ import wufo from './images/wufo.jpg';
 import piano from './images/piano.jpg';
 import taiwan from './images/taiwan.png';
 import conways from './images/conways.gif';
-import ios from './images/ios.png';
+import ios from './images/map.png';
 import micro from './images/microservice.png';
 
 import resume from './Kaizen_Conroy_Fall_2020_Resume.pdf';
@@ -216,28 +216,9 @@ const App = () => {
               <EuiFlexItem>
                 <EuiCard
                   image = {ios}
-                  title='Ticket To Ride Board Builder'
+                  title='Build and Play Ticket To Ride Boards!'
                   description='iOS, Swift, XCode'
-                  footer={<EuiPopover
-                            ownFocus
-                            button={
-                              <EuiButton
-                                iconSide="right"
-                                onClick={onButtonClick1}>
-                                See it
-                              </EuiButton>
-                            }
-                            isOpen={isPopoverOpen1}
-                            closePopover={closePopover1}
-                            anchorPosition="upCenter"
-                            panelPaddingSize="s">
-                            <EuiPopoverTitle>Private Github Repository</EuiPopoverTitle>
-                            <div style={{ width: '300px' }}>
-                              <EuiText>
-                                <p>Please contact me for code</p>
-                              </EuiText>
-                            </div>
-                          </EuiPopover>}
+                  footer={<EuiButton href="https://github.com/kaizen3031593/TTR-Board-Builder">See it</EuiButton>}
                 />
               </EuiFlexItem>
               <EuiFlexItem>
