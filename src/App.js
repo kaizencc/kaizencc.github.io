@@ -36,14 +36,6 @@ import conways from './images/conways.gif';
 import ios from './images/map.png';
 import micro from './images/microservice.png';
 
-import resume from './Kaizen_Conroy_Fall_2020_Resume.pdf';
-
-// get our fontawesome imports
-//import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-// Other themes are also available - see files at
-// node_modules/@elastic/eui/dist/
 import '@elastic/eui/dist/eui_theme_light.css';
 import './App.css';
 
@@ -67,10 +59,6 @@ const App = () => {
       </svg>
     );
   };
-
-  const [isPopoverOpen1, setIsPopoverOpen1] = useState(false);
-  const onButtonClick1 = () => setIsPopoverOpen1(isPopoverOpen1 => !isPopoverOpen1);
-  const closePopover1 = () => setIsPopoverOpen1(false);
 
   const [isPopoverOpen2, setIsPopoverOpen2] = useState(false);
   const onButtonClick2 = () => setIsPopoverOpen2(isPopoverOpen2 => !isPopoverOpen2);
@@ -121,7 +109,7 @@ const App = () => {
           <PageSection title='About Me'>
             <EuiText>
               <p>
-                I am a junior at <b> Williams College</b> {' '}
+                I am a senior at <b> Williams College</b> {' '}
                 <EuiIcon
                   type={williamsSvg}
                   size='l'
@@ -131,13 +119,14 @@ const App = () => {
               </p>
 
               <p>
-                I will be interning at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> this summer as part of the{' '}
-                <b>Cloud Development Kit</b> team. I am beyond excited for this opportunity and am
-                looking to get my hands dirty in the form of a Fall Software Engineering Internship
-                as well.
+                I am a current SDE intern at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> this summer as part of the{' '}
+                <b>Cloud Development Kit</b> team. Our product empowers developers to build infrastructure-as-code in the safety of their favorite
+                languages and IDEs. I have pushed features to production in AWS Lambda, Application Autoscaling, CloudWatch, 
+                StepFunctions, and more. My intern project consists of designing, pitching, and implementing an ergonomic API construct for 
+                AWS CloudWatch Canaries. You can take a look at my open-source work <a href="https://github.com/aws/aws-cdk/pulls?q=is%3Apr+author%3Akaizen3031593">here</a>. 
               </p>
               <p>
-                I teach computer science online as a {' '}
+                I also teach computer science online as a {' '}
                 <b>Senior Instructor</b> at <b>Juni Learning</b>{' '}
                 <EuiIcon
                   type={juniSvg}
@@ -145,7 +134,7 @@ const App = () => {
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
                 />
                 {' '}. I help my kids develop skills in <b>Python</b> and <b>Java</b>
-                , and I develop our top students for the USA Computing Olympiad. Outside of
+                , and I develop our top students for the USA Computing Olympiad or the AP CS exam. Outside of
                 teaching, I moonlight as a Python curriculum developer and recruitment coordinator
                 for Juni Learning. Some of the projects I have created and taught are a{' '}
                 <b>Tic-Tac-Toe AI</b> that never loses, as well as a simulation of
@@ -165,8 +154,9 @@ const App = () => {
             description="Amazon Web Services, June 2020 - August 2020">
             <EuiText size="s">
               <ul>
-                <li>Signed on to the Cloud Development Kit team as a part of AWS Developer Tools.</li>
-                <li>Will help evolve open-source developer toolkit for a variety of languages and IDEs.</li>
+                <li>Contributed features in Lambda, CloudWatch, Application Autoscaling, etc for the open-source Cloud Development Kit. </li>
+                <li>Designed and implemented API for AWS Synthetic Canaries that was launched in Developer Preview a month ahead of schedule. </li>
+                <li>AWS Certified Cloud Practitioner. </li>
               </ul>
             </EuiText>
             </EuiCard>
@@ -181,10 +171,8 @@ const App = () => {
             description="Juni Learning, January 2019 - Present">
             <EuiText size="s">
               <ul>
-                <li>Cultivating student understanding in Python Data Structures and Algorithms and AP CS.</li>
-                <li>Training top students for USA Computing Olympiad in both Python and Java.</li>
-                <li>Developing curriculum for Python Level 3 Data Structures master project on Tic-Tac-Toe AI</li>
-                <li>Conducting diagnostic trial lessons and screening instructor applicants.</li>
+                <li>Cultivated student understanding in Python data structures, AP Computer Science, and USA Computing Olympiad in Java.</li>
+                <li>Developed curriculum for new Python Algorithms course, conducted diagnostic trial lessons, and screened instructor applicants.</li>
               </ul>
             </EuiText>
             </EuiCard>
@@ -199,8 +187,7 @@ const App = () => {
             description="Williams College CS Department, January 2019 - May 2019">
             <EuiText size="s">
               <ul>
-                <li>Led twice-weekly T.A. sessions for Data Structures and Advanced Programming class.</li>
-                <li>Effectively explained advanced topics like searching/sorting algorithms, hash tables, graphs.</li>
+                <li>Led T.A. sessions for Data Structures in Java course reinforcing topics like searching/sorting algorithms, hash tables, and graphs.</li>
               </ul>
             </EuiText>
             </EuiCard>

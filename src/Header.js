@@ -5,12 +5,11 @@ import {
   EuiHeaderLinks,
   EuiHeaderLogo,
   EuiHeaderSectionItem,
-  EuiHeaderSectionItemButton,
   EuiButton,
 } from '@elastic/eui';
 import PropTypes from 'prop-types';
 
-import resume from './Kaizen_Conroy_Fall_2020_Resume.pdf';
+import resume from './kaizen_conroy_resume_new_grad.pdf';
 
 const HeaderLink = ({ title }) => {
   const titleHref = () => {
