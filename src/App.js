@@ -79,6 +79,7 @@ const App = () => {
               Kaizen Conroy &emsp;
               <EuiIcon type={williamsSvg} size='xxl' /> &emsp;
               <EuiIcon type='logoAWS' size='xxl' /> &emsp;
+              <EuiIcon type={columbia} size='xxl' /> &emsp;
               <EuiIcon type={juniSvg} size='xxl' /> &emsp;
             </h1>
           </EuiTitle>
@@ -119,13 +120,24 @@ const App = () => {
               </p>
 
               <p>
-                I am a current SDE intern at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> this summer as part of the{' '}
-                <b>Cloud Development Kit</b> team. Our product empowers developers to build infrastructure-as-code in the safety of their favorite
-                languages and IDEs. I have pushed features to production in AWS Lambda, Application Autoscaling, CloudWatch, 
-                StepFunctions, and more. My intern project consists of designing, pitching, and implementing an ergonomic API construct for 
-                AWS CloudWatch Canaries. You can take a look at my open-source work <a href="https://github.com/aws/aws-cdk/pulls?q=is%3Apr+author%3Akaizen3031593">here</a>. 
+                I was a Software Development Engineer Intern at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> this summer on the fascinating {' '}
+                <b>Cloud Development Kit</b> team. The CDK framework is an open-source, infrastructure-as-code tool that makes it easy to provision AWS resources
+                in the safety of your favorite language - you can replace your unintutive JSON templates with a Python CDK stack! 
+              </p>
+              <p>  
+                I pushed impactful features to production in AWS Lambda, Application Autoscaling, CloudWatch, StepFunctions, and more - my contribution was
+                maximized because I became an <b>AWS Certified Cloud Practitioner</b> prior to my internship. 
+                My intern project consisted of designing, pitching, and implementing an ergonomic API construct for 
+                AWS CloudWatch Synthetics. You can take a look at my open-source work, including my project, {' '}
+                <a href="https://github.com/aws/aws-cdk/pulls?q=is%3Apr+author%3Akaizen3031593">here</a>. 
               </p>
               <p>
+                Here are a few more highlights about me: I spent an inspirational "study abroad" semester at <b>Columbia University </b> 
+                <EuiIcon 
+                  type={columbia} 
+                  size='l' 
+                  style={{ display: 'inline', margin: 0, width: 'auto' }}
+                /> where I took four tough CS classes and solidified my love for the discipline.
                 I also teach computer science online as a {' '}
                 <b>Senior Instructor</b> at <b>Juni Learning</b>{' '}
                 <EuiIcon
@@ -136,9 +148,7 @@ const App = () => {
                 {' '}. I help my kids develop skills in <b>Python</b> and <b>Java</b>
                 , and I develop our top students for the USA Computing Olympiad or the AP CS exam. Outside of
                 teaching, I moonlight as a Python curriculum developer and recruitment coordinator
-                for Juni Learning. Some of the projects I have created and taught are a{' '}
-                <b>Tic-Tac-Toe AI</b> that never loses, as well as a simulation of
-                <b> Conways Game of Life</b>.
+                for Juni Learning.
               </p>
               <p>Lets connect! Feel free to contact me at zen.conroy@gmail.com.</p>
             </EuiText>
