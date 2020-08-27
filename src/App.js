@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  EuiBadge,
   EuiButton,
   EuiCard,
   EuiFlexGroup,
@@ -162,11 +163,25 @@ const App = () => {
             icon={<EuiIcon type='logoAWS' size='xxl' />}
             title="Software Development Engineer Intern"
             description="Amazon Web Services, June 2020 - August 2020">
+            <EuiFlexGroup wrap responsive={false} gutterSize="xs">
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">TypeScript</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="secondary">Git</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="warning">AWS Certified Cloud Practitioner</EuiBadge>
+              </EuiFlexItem>
+            </EuiFlexGroup>
+            <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
-                <li>Contributed features in Lambda, CloudWatch, Application Autoscaling, etc for the open-source Cloud Development Kit. </li>
-                <li>Designed and implemented API for AWS Synthetic Canaries that was launched in Developer Preview a month ahead of schedule. </li>
-                <li>AWS Certified Cloud Practitioner. </li>
+                <li>Contributed​ features in Lambda, CloudWatch, Autoscaling, etc. for open-source, infrastructure-as-code Cloud Development Kit. </li>
+                <li>Fully owned all phases of the software development lifecycle for new CDK Construct modelling AWS CloudWatch Synthetics,
+launching​ it in Developer Preview a month ahead of schedule. </li>
+                <li>Built a reference ​app​ using the CDK framework for AWS Synthetics demonstrating its integration with AWS CodePipeline for
+enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, and SNS. </li>
               </ul>
             </EuiText>
             </EuiCard>
@@ -179,10 +194,19 @@ const App = () => {
             icon={<EuiIcon type={juniSvg} size='xxl' />}
             title="Senior Computer Science Instructor II"
             description="Juni Learning, January 2019 - Present">
+            <EuiFlexGroup wrap responsive={false} gutterSize="xs">
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">Python</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">Java</EuiBadge>
+              </EuiFlexItem>
+            </EuiFlexGroup>
+            <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
-                <li>Cultivated student understanding in Python data structures, AP Computer Science, and USA Computing Olympiad in Java.</li>
-                <li>Developed curriculum for new Python Algorithms course, conducted diagnostic trial lessons, and screened instructor applicants.</li>
+                <li>Cultivating student understanding in data structures, AP Computer Science, and USA Computing Olympiad (Bronze/Silver).</li>
+                <li>Developing ​curriculum​ for new Python Algorithms course, conducting diagnostic trial lessons, screening instructor applicants.</li>
               </ul>
             </EuiText>
             </EuiCard>
@@ -195,9 +219,18 @@ const App = () => {
             icon={<EuiIcon type={williamsSvg} size='xxl' />}
             title="Computer Science Teaching Assistant"
             description="Williams College CS Department, January 2019 - May 2019">
+            <EuiFlexGroup wrap responsive={false} gutterSize="xs">
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">Java</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="secondary">Git</EuiBadge>
+              </EuiFlexItem>
+            </EuiFlexGroup>
+            <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
-                <li>Led T.A. sessions for Data Structures in Java course reinforcing topics like searching/sorting algorithms, hash tables, and graphs.</li>
+                <li>Led T.A. sessions for ​Data Structures in Java​ course reinforcing topics like searching/sorting algorithms, hash tables, and graphs.</li>
               </ul>
             </EuiText>
             </EuiCard>
@@ -213,8 +246,23 @@ const App = () => {
               <EuiFlexItem>
                 <EuiCard
                   image = {ios}
-                  title='Build and Play Ticket To Ride Boards!'
-                  description='iOS, Swift, XCode'
+                  title='Custom Ticket To Ride Boards!'
+                  description = {
+                    <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="primary">Swift</EuiBadge>
+                      </EuiFlexItem>
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="secondary">Git</EuiBadge>
+                      </EuiFlexItem>
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="warning">XCode</EuiBadge>
+                      </EuiFlexItem>
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="warning">iOS</EuiBadge>
+                      </EuiFlexItem>
+                    </EuiFlexGroup>
+                  }
                   footer={<EuiButton href="https://github.com/kaizen3031593/TTR-Board-Builder">See it</EuiButton>}
                 />
               </EuiFlexItem>
@@ -222,27 +270,44 @@ const App = () => {
                 <EuiCard
                   image = {micro}
                   title='Microservice Application'
-                  description='Python, Flask, MySQL, AWS'
-                  footer={<EuiPopover
-                            ownFocus
-                            button={
-                              <EuiButton
-                                iconSide="right"
-                                onClick={onButtonClick2}>
-                                See it
-                              </EuiButton>
-                            }
-                            isOpen={isPopoverOpen2}
-                            closePopover={closePopover2}
-                            anchorPosition="upCenter"
-                            panelPaddingSize="s">
-                            <EuiPopoverTitle>Private Github Repository</EuiPopoverTitle>
-                            <div style={{ width: '300px' }}>
-                              <EuiText>
-                                <p>Please contact me for code</p>
-                              </EuiText>
-                            </div>
-                          </EuiPopover>}
+                  description={
+                    <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="primary">Python</EuiBadge>
+                      </EuiFlexItem>
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="primary">MySQL</EuiBadge>
+                      </EuiFlexItem>
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="warning">Flask</EuiBadge>
+                      </EuiFlexItem>
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="warning">AWS</EuiBadge>
+                      </EuiFlexItem>
+                    </EuiFlexGroup>
+                  }
+                  footer={
+                    <EuiPopover
+                      ownFocus
+                      button={
+                        <EuiButton
+                          iconSide="right"
+                          onClick={onButtonClick2}>
+                          See it
+                        </EuiButton>
+                      }
+                      isOpen={isPopoverOpen2}
+                      closePopover={closePopover2}
+                      anchorPosition="upCenter"
+                      panelPaddingSize="s">
+                      <EuiPopoverTitle>Private Github Repository</EuiPopoverTitle>
+                      <div style={{ width: '300px' }}>
+                        <EuiText>
+                          <p>Please contact me for code</p>
+                        </EuiText>
+                      </div>
+                    </EuiPopover>
+                  }
                 />
               </EuiFlexItem>
             </EuiFlexGroup>
@@ -251,7 +316,13 @@ const App = () => {
               <EuiCard
                 image = {poker}
                 title='Heads-Up Poker AI'
-                description='Python'
+                description={
+                  <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
+                    <EuiFlexItem grow={false}>
+                      <EuiBadge color="primary">Python</EuiBadge>
+                    </EuiFlexItem>
+                  </EuiFlexGroup>
+                }
                 footer={<EuiButton href="https://github.com/kaizen3031593/Poker-Project">See it</EuiButton>}
               />
             </EuiFlexItem>
@@ -259,18 +330,27 @@ const App = () => {
               <EuiCard
                 image = {conways}
                 title='Juni Learning Curriculum'
-                description='Python'
+                description={
+                  <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
+                    <EuiFlexItem grow={false}>
+                      <EuiBadge color="primary">Python</EuiBadge>
+                    </EuiFlexItem>
+                  </EuiFlexGroup>
+                }
                 footer={<EuiButton href="https://github.com/kaizen3031593/Curriculum-Development">See it</EuiButton>}
               />
             </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer />
             <EuiText>
-              <p>Check out more (including this project) at my github: <EuiButtonEmpty iconType="logoGithub"
-                                                                                  color="text"
-                                                                                  size = "s"
-                                                                                  href="https://github.com/kaizen3031593">
-                                                                                  </EuiButtonEmpty></p>
+              <p>Check out more (including this project) at my github: 
+                <EuiButtonEmpty 
+                  iconType="logoGithub"
+                  color="text"
+                  size = "s"
+                  href="https://github.com/kaizen3031593">
+                </EuiButtonEmpty>
+              </p>
             </EuiText>
           </PageSection>
           <EuiSpacer />
