@@ -146,9 +146,8 @@ const App = () => {
                   size='l'
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
                 />
-                {' '}. I help my kids develop skills in <b>Python</b> and <b>Java</b>
-                , and I develop our top students for the USA Computing Olympiad or the AP CS exam. Outside of
-                teaching, I moonlight as a Python curriculum developer and recruitment coordinator
+                {' '}, where I help kids develop fundamental programming skills and train for the USA Computing Olympiad.
+                Outside of teaching, I moonlight as a Python curriculum developer and recruitment coordinator
                 for Juni Learning.
               </p>
               <p>Lets connect! Feel free to contact me at zen.conroy@gmail.com.</p>
