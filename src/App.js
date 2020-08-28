@@ -171,6 +171,9 @@ const App = () => {
                 <EuiBadge color="secondary">Git</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
+                <EuiBadge color="warning">Jest</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
                 <EuiBadge color="warning">AWS Certified Cloud Practitioner</EuiBadge>
               </EuiFlexItem>
             </EuiFlexGroup>
@@ -362,6 +365,27 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             icon={<EuiIcon type={williamsSvg} size='xxl' />}
             title="Williams College"
             description="B.A., Computer Science, September 2017 - May 2021">
+            <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">Java</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">C</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">Swift</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">Stata</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="secondary">Git</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="secondary">Latex</EuiBadge>
+              </EuiFlexItem>
+            </EuiFlexGroup>
+            <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
                 <li>Deans List, GPA: 3.52.</li>
@@ -379,6 +403,30 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             icon={<EuiIcon type={columbia} size='xxl' />}
             title="Columbia University"
             description="Visiting Student in Computer Science, September 2019 - December 2019">
+            <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">Python</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">SQL</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="secondary">Git</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="warning">Flask</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="warning">scikit-learn</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="warning">Postman</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="warning">AWS</EuiBadge>
+              </EuiFlexItem>
+            </EuiFlexGroup>
+            <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
                 <li>GPA: 3.64. </li>
@@ -415,7 +463,22 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
               <EuiCard
                 icon={<EuiIcon size='xxl' type={williamsSvg} />}
                 title='Williams Students Online (WSO)'
-                description='Member of the Frontend Team developing skills in React and Javascript while working on school website. '
+                description={
+                  <EuiFlexItem>
+                    <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="primary">Javascript</EuiBadge>
+                      </EuiFlexItem>
+                      <EuiFlexItem grow={false}>
+                        <EuiBadge color="warning">React</EuiBadge>
+                      </EuiFlexItem>
+                    </EuiFlexGroup>
+                    <EuiSpacer size="m" />
+                    <EuiText size="s">
+                      <p>Mentor students and develop features for the Frontend Team of school website.</p>
+                    </EuiText>
+                  </EuiFlexItem>
+                }
               />
             </EuiFlexItem>
             <EuiFlexItem>
