@@ -383,6 +383,9 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
               <EuiFlexItem grow={false}>
                 <EuiBadge color="secondary">Latex</EuiBadge>
               </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="warning">XCode</EuiBadge>
+              </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer size="m" />
             <EuiText size="s">
