@@ -27,15 +27,16 @@ import PageSection from './PageSection';
 import williamsSvg from './images/williams.svg';
 import juniSvg from './images/juni1.png';
 import poker from './images/poker.png';
-import kaizen from './images/kaizen_face.jpg';
+import kaizen from './images/kaizen_conroy.jpg';
 import columbia from './images/columbia.jpg';
 import sas from './images/sas_logo2.jpg';
 import wufo from './images/wufo.jpg';
 import piano from './images/piano.jpg';
 import taiwan from './images/taiwan.png';
-import conways from './images/conways.gif';
 import ios from './images/map.png';
 import micro from './images/microservice.png';
+import cryptonight from './images/gemlogo.png';
+import cryptoscreen from './images/cryptoscreen1.png';
 
 import '@elastic/eui/dist/eui_theme_light.css';
 import './App.css';
@@ -78,8 +79,9 @@ const App = () => {
           <EuiTitle size='l'>
             <h1>
               Kaizen Conroy &emsp;
-              <EuiIcon type={williamsSvg} size='xxl' /> &emsp;
               <EuiIcon type='logoAWS' size='xxl' /> &emsp;
+              <EuiIcon type={cryptonight} size='xxl' /> &emsp;
+              <EuiIcon type={williamsSvg} size='xxl' /> &emsp;
               <EuiIcon type={columbia} size='xxl' /> &emsp;
               <EuiIcon type={juniSvg} size='xxl' /> &emsp;
             </h1>
@@ -117,16 +119,17 @@ const App = () => {
                   size='l'
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
                 />
-                 {' '} pursuing a bachelor of arts in Computer Science.
+                 {' '} graduating with a bachelor of arts in Computer Science in May 2021.
               </p>
 
               <p>
-                I was a Software Development Engineer Intern at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> this summer on the fascinating {' '}
-                <b>Cloud Development Kit</b> team. The CDK framework is an open-source, infrastructure-as-code tool that makes it easy to provision AWS resources
-                in the safety of your favorite language - you can replace your unintutive JSON templates with a Python CDK stack! 
+                I was a 2020 Software Development Engineer Intern at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> on the fascinating {' '}
+                <b>Cloud Development Kit</b> team and I'm happy to say that I'll be headed back to my team in August 2021 in NYC! The CDK team in a nutshell delivers an open-source, 
+                infrastructure-as-code framework that makes it easy to provision AWS resources within the safety of your favorite language - 
+                you can replace your unintutive JSON templates with a Python CDK stack! 
               </p>
               <p>  
-                I pushed impactful features to production in AWS Lambda, Application Autoscaling, CloudWatch, StepFunctions, and more - my contribution was
+                During my time at AWS, I pushed impactful features to production in AWS Lambda, Application Autoscaling, CloudWatch, StepFunctions, and more - my contribution was
                 maximized because I became an <b>AWS Certified Cloud Practitioner</b> prior to my internship. 
                 My intern project consisted of designing, pitching, and implementing an ergonomic API construct for 
                 AWS CloudWatch Synthetics. You can take a look at my open-source work, including my project, {' '}
@@ -138,7 +141,8 @@ const App = () => {
                   type={columbia} 
                   size='l' 
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
-                /> where I took four tough CS classes and solidified my love for the discipline.
+                /> 
+                {' '} where I took four tough CS classes and solidified my love for the discipline.
                 I also teach computer science online as a {' '}
                 <b>Senior Instructor</b> at <b>Juni Learning</b>{' '}
                 <EuiIcon
@@ -150,12 +154,55 @@ const App = () => {
                 Outside of teaching, I moonlight as a Python curriculum developer and recruitment coordinator
                 for Juni Learning.
               </p>
+              <p>
+                Finally, I built and maintain the online multiplayer game <a href="https://cryptonight.codes/">CryptoNight </a>
+                <EuiIcon 
+                  type={cryptonight} 
+                  size='l' 
+                  style={{ display: 'inline', margin: 0, width: 'auto' }}
+                /> 
+                , a superhero-themed version of Codenames. It runs on an AWS EC2 instance, Elastic IP, and Route 53 Hosted Zone,
+                proving that I can be both a customer and a developer for AWS!
+              </p>
               <p>Lets connect! Feel free to contact me at zen.conroy@gmail.com.</p>
             </EuiText>
           </PageSection>
           <EuiSpacer />
 
           <PageSection title='Experience'>
+
+          <EuiFlexGroup gutterSize='l'>
+            <EuiCard
+            layout="horizontal"
+            icon={<EuiIcon type='logoAWS' size='xxl' />}
+            title="Software Development Engineer"
+            description="Amazon Web Services, August 2021">
+            <EuiFlexGroup wrap responsive={false} gutterSize="xs">
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">TypeScript</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="secondary">Git</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="warning">Jest</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="warning">AWS Certified Cloud Practitioner</EuiBadge>
+              </EuiFlexItem>
+            </EuiFlexGroup>
+            <EuiSpacer size="m" />
+            <EuiText size="s">
+              <ul>
+                <li>Returning to the CDK team in August to continue my work on the CDK Construct Library.</li>
+              </ul>
+            </EuiText>
+            </EuiCard>
+          </EuiFlexGroup>
+
+          <EuiSpacer />
+          <EuiSpacer />
+          
           <EuiFlexGroup gutterSize='l'>
             <EuiCard
             layout="horizontal"
@@ -188,8 +235,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             </EuiText>
             </EuiCard>
           </EuiFlexGroup>
+
           <EuiSpacer />
           <EuiSpacer />
+
           <EuiFlexGroup gutterSize='l'>
             <EuiCard
             layout="horizontal"
@@ -213,8 +262,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             </EuiText>
             </EuiCard>
           </EuiFlexGroup>
+
           <EuiSpacer />
           <EuiSpacer />
+
           <EuiFlexGroup gutterSize='l'>
             <EuiCard
             layout="horizontal"
@@ -245,6 +296,39 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
               <p>Here are some of my projects:</p>
             </EuiText>
             <EuiFlexGroup gutterSize='l'>
+            <EuiFlexItem>
+              <EuiCard
+                image = {cryptoscreen}
+                title='CryptoNight Game'
+                description={
+                  <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
+                    <EuiFlexItem grow={false}>
+                      <EuiBadge color="primary">Javascript</EuiBadge>
+                    </EuiFlexItem>
+                    <EuiFlexItem grow={false}>
+                      <EuiBadge color="secondary">Git</EuiBadge>
+                    </EuiFlexItem>
+                    <EuiFlexItem grow={false}>
+                      <EuiBadge color="warning">Node.js</EuiBadge>
+                    </EuiFlexItem>
+                    <EuiFlexItem grow={false}>
+                      <EuiBadge color="warning">Express.js</EuiBadge>
+                    </EuiFlexItem>
+                    <EuiFlexItem grow={false}>
+                      <EuiBadge color="warning">MongoDB</EuiBadge>
+                    </EuiFlexItem>
+                    <EuiFlexItem grow={false}>
+                      <EuiBadge color="warning">AWS</EuiBadge>
+                    </EuiFlexItem>
+                    <EuiFlexItem grow={false}>
+                      <EuiBadge color="warning">nginx</EuiBadge>
+                    </EuiFlexItem>
+                      
+                  </EuiFlexGroup>
+                }
+                footer={<EuiButton href="https://cryptonight.codes/">See it</EuiButton>}
+              />
+            </EuiFlexItem>
               <EuiFlexItem>
                 <EuiCard
                   image = {ios}
@@ -268,6 +352,8 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                   footer={<EuiButton href="https://github.com/kaizen3031593/TTR-Board-Builder">See it</EuiButton>}
                 />
               </EuiFlexItem>
+            </EuiFlexGroup>
+            <EuiFlexGroup gutterSize='l'>
               <EuiFlexItem>
                 <EuiCard
                   image = {micro}
@@ -312,8 +398,6 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                   }
                 />
               </EuiFlexItem>
-            </EuiFlexGroup>
-            <EuiFlexGroup gutterSize='l'>
             <EuiFlexItem>
               <EuiCard
                 image = {poker}
@@ -326,20 +410,6 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                   </EuiFlexGroup>
                 }
                 footer={<EuiButton href="https://github.com/kaizen3031593/Poker-Project">See it</EuiButton>}
-              />
-            </EuiFlexItem>
-            <EuiFlexItem>
-              <EuiCard
-                image = {conways}
-                title='Juni Learning Curriculum'
-                description={
-                  <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
-                    <EuiFlexItem grow={false}>
-                      <EuiBadge color="primary">Python</EuiBadge>
-                    </EuiFlexItem>
-                  </EuiFlexGroup>
-                }
-                footer={<EuiButton href="https://github.com/kaizen3031593/Curriculum-Development">See it</EuiButton>}
               />
             </EuiFlexItem>
             </EuiFlexGroup>
@@ -390,9 +460,9 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
-                <li>Deans List, GPA: 3.52.</li>
-                <li>Computer Science: Software Methods, Algorithm Design, Applied Algos, Data Structures. </li>
-                <li>Math: Linear Algebra, Discrete Math, Econometrics.</li>
+                <li>Deans List, GPA: 3.58.</li>
+                <li>Computer Science: Programming Languages, Software Methods, Theory of Computation, Algorithm Design, Applied Algos, Data Structures. </li>
+                <li>Math: Graph Theory, Linear Algebra, Discrete Math, Econometrics.</li>
               </ul>
             </EuiText>
             </EuiCard>
