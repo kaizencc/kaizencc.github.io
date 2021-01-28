@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  EuiAccordion,
   EuiBadge,
   EuiButton,
   EuiCard,
@@ -46,7 +47,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const App = () => {
-  const sections = ['About Me', 'Experience', 'Projects', 'Education', 'Extracurriculars', 'Contact Me'];
+  const sections = ['About Me', 'Experience', 'Projects', 'Education', 'Coursework', 'Extracurriculars', 'Contact Me'];
 
   const toHref = (title) => {
     return '#' + title.toLowerCase().split(' ').join('-');
@@ -155,7 +156,7 @@ const App = () => {
                 for Juni Learning.
               </p>
               <p>
-                Finally, I built and maintain the online multiplayer game <a href="https://cryptonight.codes/">CryptoNight </a>
+                Finally, I built and maintain the online multiplayer game <a href="https://cryptonight.codes/"><b>CryptoNight</b> </a>
                 <EuiIcon 
                   type={cryptonight} 
                   size='l' 
@@ -182,13 +183,13 @@ const App = () => {
                 <EuiBadge color="primary">TypeScript</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="secondary">Git</EuiBadge>
+                <EuiBadge color="warning">Git</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">Jest</EuiBadge>
+                <EuiBadge color="secondary">Jest</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">AWS Certified Cloud Practitioner</EuiBadge>
+                <EuiBadge color="secondary">AWS Certified Cloud Practitioner</EuiBadge>
               </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer size="m" />
@@ -214,19 +215,19 @@ const App = () => {
                 <EuiBadge color="primary">TypeScript</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="secondary">Git</EuiBadge>
+                <EuiBadge color="warning">Git</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">Jest</EuiBadge>
+                <EuiBadge color="secondary">Jest</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">AWS Certified Cloud Practitioner</EuiBadge>
+                <EuiBadge color="secondary">AWS Certified Cloud Practitioner</EuiBadge>
               </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
-                <li>Contributed​ features in Lambda, CloudWatch, Autoscaling, etc. for open-source, infrastructure-as-code Cloud Development Kit. </li>
+                <li>Contributed​ features in Lambda, CloudWatch, Autoscaling, etc. for the open-source, infrastructure-as-code Cloud Development Kit. </li>
                 <li>Fully owned all phases of the software development lifecycle for new CDK Construct modelling AWS CloudWatch Synthetics,
 launching​ it in Developer Preview a month ahead of schedule. </li>
                 <li>Built a reference ​app​ using the CDK framework for AWS Synthetics demonstrating its integration with AWS CodePipeline for
@@ -277,7 +278,7 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                 <EuiBadge color="primary">Java</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="secondary">Git</EuiBadge>
+                <EuiBadge color="warning">Git</EuiBadge>
               </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer size="m" />
@@ -303,25 +304,25 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                 description={
                   <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
                     <EuiFlexItem grow={false}>
-                      <EuiBadge color="primary">Javascript</EuiBadge>
+                      <EuiBadge color="primary">JavaScript</EuiBadge>
                     </EuiFlexItem>
                     <EuiFlexItem grow={false}>
-                      <EuiBadge color="secondary">Git</EuiBadge>
+                      <EuiBadge color="secondary">Node.js</EuiBadge>
                     </EuiFlexItem>
                     <EuiFlexItem grow={false}>
-                      <EuiBadge color="warning">Node.js</EuiBadge>
+                      <EuiBadge color="secondary">Express.js</EuiBadge>
                     </EuiFlexItem>
                     <EuiFlexItem grow={false}>
-                      <EuiBadge color="warning">Express.js</EuiBadge>
+                      <EuiBadge color="secondary">Socket.io</EuiBadge>
                     </EuiFlexItem>
                     <EuiFlexItem grow={false}>
-                      <EuiBadge color="warning">MongoDB</EuiBadge>
+                      <EuiBadge color="secondary">MongoDB</EuiBadge>
                     </EuiFlexItem>
                     <EuiFlexItem grow={false}>
-                      <EuiBadge color="warning">AWS</EuiBadge>
+                      <EuiBadge color="secondary">AWS</EuiBadge>
                     </EuiFlexItem>
                     <EuiFlexItem grow={false}>
-                      <EuiBadge color="warning">nginx</EuiBadge>
+                      <EuiBadge color="secondary">nginx</EuiBadge>
                     </EuiFlexItem>
                       
                   </EuiFlexGroup>
@@ -339,13 +340,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                         <EuiBadge color="primary">Swift</EuiBadge>
                       </EuiFlexItem>
                       <EuiFlexItem grow={false}>
-                        <EuiBadge color="secondary">Git</EuiBadge>
+                        <EuiBadge color="secondary">XCode</EuiBadge>
                       </EuiFlexItem>
                       <EuiFlexItem grow={false}>
-                        <EuiBadge color="warning">XCode</EuiBadge>
-                      </EuiFlexItem>
-                      <EuiFlexItem grow={false}>
-                        <EuiBadge color="warning">iOS</EuiBadge>
+                        <EuiBadge color="secondary">iOS</EuiBadge>
                       </EuiFlexItem>
                     </EuiFlexGroup>
                   }
@@ -367,10 +365,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                         <EuiBadge color="primary">MySQL</EuiBadge>
                       </EuiFlexItem>
                       <EuiFlexItem grow={false}>
-                        <EuiBadge color="warning">Flask</EuiBadge>
+                        <EuiBadge color="secondary">Flask</EuiBadge>
                       </EuiFlexItem>
                       <EuiFlexItem grow={false}>
-                        <EuiBadge color="warning">AWS</EuiBadge>
+                        <EuiBadge color="secondary">AWS</EuiBadge>
                       </EuiFlexItem>
                     </EuiFlexGroup>
                   }
@@ -454,7 +452,7 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                 <EuiBadge color="secondary">Latex</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">XCode</EuiBadge>
+                <EuiBadge color="secondary">XCode</EuiBadge>
               </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer size="m" />
@@ -486,16 +484,16 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                 <EuiBadge color="secondary">Git</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">Flask</EuiBadge>
+                <EuiBadge color="secondary">Flask</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">scikit-learn</EuiBadge>
+                <EuiBadge color="secondary">scikit-learn</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">Postman</EuiBadge>
+                <EuiBadge color="secondary">Postman</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">AWS</EuiBadge>
+                <EuiBadge color="secondary">AWS</EuiBadge>
               </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer size="m" />
@@ -526,6 +524,116 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
           </PageSection>
           <EuiSpacer />
 
+          <PageSection title='Coursework'>
+          <EuiAccordion
+            id="accordion"
+            buttonContent="Fall 2017"
+            paddingSize="l">
+            <EuiText>
+              <ul>
+                <li><b>AMST 101:</b> America: The Nation and its Discontents</li>
+                <li><b>ANTH 101:</b> How to be Human</li>
+                <li><b>CSCI 134:</b> Algorithmic Problem Solving with Robots</li>
+                <li><b>ENGL 285:</b> Intro Workshop in Prose</li>
+              </ul>
+            </EuiText>
+          </EuiAccordion>
+          <EuiAccordion
+            id="accordion"
+            buttonContent="Spring 2018"
+            paddingSize="l">
+            <EuiText>
+              <ul>
+                <li><b>CSCI 136:</b> Data Structures and Advanced Programming</li>
+                <li><b>ECON 251:</b> Price and Allocation Theory</li>
+                <li><b>ENGL 246:</b> The Love of Literature</li>
+                <li><b>MUS 150:</b> The Broadway Musical</li>
+              </ul>
+            </EuiText>
+          </EuiAccordion>
+          <EuiAccordion
+            id="accordion"
+            buttonContent="Fall 2018"
+            paddingSize="l">
+            <EuiText>
+              <ul>
+                <li><b>CSCI 237:</b> Computer Organization</li>
+                <li><b>ECON 252:</b> Intermediate Macroeconomics</li>
+                <li><b>MATH 200:</b> Discrete Math</li>
+                <li><b>THEA 103:</b> Acting Fundamentals</li>
+              </ul>
+            </EuiText>
+          </EuiAccordion>
+          <EuiAccordion
+            id="accordion"
+            buttonContent="Spring 2019"
+            paddingSize="l">
+            <EuiText>
+              <ul>
+                <li><b>CSCI 256:</b> Algorithm Design and Analysis</li>
+                <li><b>ECON 255:</b> Econometrics</li>
+                <li><b>ENGL 202:</b> Modern Drama</li>
+                <li><b>MATH 250:</b> Linear Algebra</li>
+              </ul>
+            </EuiText>
+          </EuiAccordion>
+          <EuiAccordion
+            id="accordion"
+            buttonContent="Fall 2019 - Columbia University"
+            paddingSize="l">
+            <EuiText>
+              <ul>
+                <li><b>COMS 3157:</b> Advanced Programming</li>
+                <li><b>COMS 4111:</b> Intro to Databases</li>
+                <li><b>COMS 4701:</b> Artificial Intelligence</li>
+                <li><b>COMS 6156:</b> Topics in Software Engineering</li>
+                <li><b>ECON 4415:</b> Game Theory</li>
+              </ul>
+            </EuiText>
+          </EuiAccordion>
+          <EuiAccordion
+            id="accordion"
+            buttonContent="Spring 2020"
+            paddingSize="l">
+            <EuiText>
+              <ul>
+                <li><b>CSCI 326:</b> Software Methods</li>
+                <li><b>CSCI 358:</b> Applied Algorithms</li>
+                <li><b>PHIL 104:</b> Philsophy and Tragedy</li>
+                <li><b>STS 153:</b> Androids, Cyborgs, and Selves</li>
+              </ul>
+            </EuiText>
+          </EuiAccordion>
+          <EuiAccordion
+            id="accordion"
+            buttonContent="Fall 2020"
+            paddingSize="l">
+            <EuiText>
+              <ul>
+                <li><b>CSCI 334:</b> Principles of Programming Languages</li>
+                <li><b>CSCI 357:</b> Algorithmic Game Theory</li>
+                <li><b>MATH 151:</b> Multivariable Calculus</li>
+                <li><b>MUS 101:</b> Listening to Music</li>
+              </ul>
+            </EuiText>
+          </EuiAccordion>
+          <EuiAccordion
+            id="accordion"
+            buttonContent="Spring 2021"
+            paddingSize="l">
+            <EuiText>
+              <ul>
+                <li><b>CSCI 361:</b> Theory of Computation</li>
+                <li><b>CSCI 378:</b> Human-AI Interaction</li>
+                <li><b>MATH 334:</b> Graph Theory</li>
+                <li><b>MUS 149:</b> The Language of Film Music</li>
+                <li><b>MUS 232:</b> Music in History: Classical and Romantic Music</li>
+              </ul>
+            </EuiText>
+          </EuiAccordion>
+          </PageSection>
+          <EuiSpacer />
+
           <PageSection title='Extracurriculars'>
           <EuiText>
             <p>At Williams:</p>
@@ -539,10 +647,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                   <EuiFlexItem>
                     <EuiFlexGroup wrap responsive={false} gutterSize="xs" alignItems="center">
                       <EuiFlexItem grow={false}>
-                        <EuiBadge color="primary">Javascript</EuiBadge>
+                        <EuiBadge color="primary">JavaScript</EuiBadge>
                       </EuiFlexItem>
                       <EuiFlexItem grow={false}>
-                        <EuiBadge color="warning">React</EuiBadge>
+                        <EuiBadge color="secondary">React</EuiBadge>
                       </EuiFlexItem>
                     </EuiFlexGroup>
                     <EuiSpacer size="m" />
