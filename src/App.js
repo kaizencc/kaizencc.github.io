@@ -528,7 +528,8 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
           <EuiAccordion
             id="accordion"
             buttonContent="Fall 2017"
-            paddingSize="l">
+            paddingSize="l"
+            >
             <EuiText textAlign='right'>
               <EuiBadge color="secondary" iconType="user">GPA: 3.50</EuiBadge>
             </EuiText>
@@ -544,7 +545,8 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
           <EuiAccordion
             id="accordion"
             buttonContent="Spring 2018"
-            paddingSize="l">
+            paddingSize="l"
+            >
             <EuiText textAlign='right'>
               <EuiBadge color="secondary" iconType="user">GPA: 3.50</EuiBadge>
             </EuiText>
