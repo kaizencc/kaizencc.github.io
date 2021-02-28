@@ -531,10 +531,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             paddingSize="l">
             <EuiText>
               <ul>
-                <li><b>AMST 101:</b> America: The Nation and its Discontents</li>
-                <li><b>ANTH 101:</b> How to be Human</li>
-                <li><b>CSCI 134:</b> Algorithmic Problem Solving with Robots</li>
-                <li><b>ENGL 285:</b> Intro Workshop in Prose</li>
+                <li><b>AMST 101:</b> America: The Nation and its Discontents (A-)</li>
+                <li><b>ANTH 101:</b> How to be Human (B+)</li>
+                <li><b>CSCI 134:</b> Algorithmic Problem Solving with Robots (A)</li>
+                <li><b>ENGL 285:</b> Intro Workshop in Prose (B)</li>
               </ul>
             </EuiText>
           </EuiAccordion>
@@ -544,10 +544,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             paddingSize="l">
             <EuiText>
               <ul>
-                <li><b>CSCI 136:</b> Data Structures and Advanced Programming</li>
-                <li><b>ECON 251:</b> Price and Allocation Theory</li>
-                <li><b>ENGL 246:</b> The Love of Literature</li>
-                <li><b>MUS 150:</b> The Broadway Musical</li>
+                <li><b>CSCI 136:</b> Data Structures and Advanced Programming (B+)</li>
+                <li><b>ECON 251:</b> Price and Allocation Theory (A-)</li>
+                <li><b>ENGL 246:</b> The Love of Literature (B+)</li>
+                <li><b>MUS 150:</b> The Broadway Musical (A-)</li>
               </ul>
             </EuiText>
           </EuiAccordion>
@@ -557,10 +557,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             paddingSize="l">
             <EuiText>
               <ul>
-                <li><b>CSCI 237:</b> Computer Organization</li>
-                <li><b>ECON 252:</b> Intermediate Macroeconomics</li>
-                <li><b>MATH 200:</b> Discrete Math</li>
-                <li><b>THEA 103:</b> Acting Fundamentals</li>
+                <li><b>CSCI 237:</b> Computer Organization (B+)</li>
+                <li><b>ECON 252:</b> Intermediate Macroeconomics (B)</li>
+                <li><b>MATH 200:</b> Discrete Math (A)</li>
+                <li><b>THEA 103:</b> Acting Fundamentals (A-)</li>
               </ul>
             </EuiText>
           </EuiAccordion>
@@ -570,10 +570,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             paddingSize="l">
             <EuiText>
               <ul>
-                <li><b>CSCI 256:</b> Algorithm Design and Analysis</li>
-                <li><b>ECON 255:</b> Econometrics</li>
-                <li><b>ENGL 202:</b> Modern Drama</li>
-                <li><b>MATH 250:</b> Linear Algebra</li>
+                <li><b>CSCI 256:</b> Algorithm Design and Analysis (B+)</li>
+                <li><b>ECON 255:</b> Econometrics (B+)</li>
+                <li><b>ENGL 202:</b> Modern Drama (A-)</li>
+                <li><b>MATH 250:</b> Linear Algebra (A)</li>
               </ul>
             </EuiText>
           </EuiAccordion>
@@ -583,11 +583,11 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             paddingSize="l">
             <EuiText>
               <ul>
-                <li><b>COMS 3157:</b> Advanced Programming</li>
-                <li><b>COMS 4111:</b> Intro to Databases</li>
-                <li><b>COMS 4701:</b> Artificial Intelligence</li>
-                <li><b>COMS 6156:</b> Topics in Software Engineering</li>
-                <li><b>ECON 4415:</b> Game Theory</li>
+                <li><b>COMS 3157:</b> Advanced Programming (B+)</li>
+                <li><b>COMS 4111:</b> Intro to Databases (A)</li>
+                <li><b>COMS 4701:</b> Artificial Intelligence (B)</li>
+                <li><b>COMS 6156:</b> Topics in Software Engineering (A+)</li>
+                <li><b>ECON 4415:</b> Game Theory (A-)</li>
               </ul>
             </EuiText>
           </EuiAccordion>
@@ -597,10 +597,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             paddingSize="l">
             <EuiText>
               <ul>
-                <li><b>CSCI 326:</b> Software Methods</li>
-                <li><b>CSCI 358:</b> Applied Algorithms</li>
-                <li><b>PHIL 104:</b> Philsophy and Tragedy</li>
-                <li><b>STS 153:</b> Androids, Cyborgs, and Selves</li>
+                <li><b>CSCI 326:</b> Software Methods (P)</li>
+                <li><b>CSCI 358:</b> Applied Algorithms (P)</li>
+                <li><b>PHIL 104:</b> Philsophy and Tragedy (P)</li>
+                <li><b>STS 153:</b> Androids, Cyborgs, and Selves (P)</li>
               </ul>
             </EuiText>
           </EuiAccordion>
@@ -610,10 +610,10 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             paddingSize="l">
             <EuiText>
               <ul>
-                <li><b>CSCI 334:</b> Principles of Programming Languages</li>
-                <li><b>CSCI 357:</b> Algorithmic Game Theory</li>
-                <li><b>MATH 151:</b> Multivariable Calculus</li>
-                <li><b>MUS 101:</b> Listening to Music</li>
+                <li><b>CSCI 334:</b> Principles of Programming Languages (A-)</li>
+                <li><b>CSCI 357:</b> Algorithmic Game Theory (P)</li>
+                <li><b>MATH 151:</b> Multivariable Calculus (A)</li>
+                <li><b>MUS 101:</b> Listening to Music (A)</li>
               </ul>
             </EuiText>
           </EuiAccordion>
