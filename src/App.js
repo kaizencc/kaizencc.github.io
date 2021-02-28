@@ -529,6 +529,9 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             id="accordion"
             buttonContent="Fall 2017"
             paddingSize="l">
+            <EuiText textAlign='right'>
+              <EuiBadge color="secondary" iconType="user">GPA: 3.50</EuiBadge>
+            </EuiText>
             <EuiText>
               <ul>
                 <li><b>AMST 101:</b> America: The Nation and its Discontents (A-)</li>
@@ -542,6 +545,9 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             id="accordion"
             buttonContent="Spring 2018"
             paddingSize="l">
+            <EuiText textAlign='right'>
+              <EuiBadge color="secondary" iconType="user">GPA: 3.50</EuiBadge>
+            </EuiText>
             <EuiText>
               <ul>
                 <li><b>CSCI 136:</b> Data Structures and Advanced Programming (B+)</li>
@@ -555,6 +561,9 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             id="accordion"
             buttonContent="Fall 2018"
             paddingSize="l">
+            <EuiText textAlign='right'>
+              <EuiBadge color="secondary" iconType="user">GPA: 3.50</EuiBadge>
+            </EuiText>
             <EuiText>
               <ul>
                 <li><b>CSCI 237:</b> Computer Organization (B+)</li>
@@ -568,6 +577,9 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             id="accordion"
             buttonContent="Spring 2019"
             paddingSize="l">
+            <EuiText textAlign='right'>
+              <EuiBadge color="secondary" iconType="user">GPA: 3.58</EuiBadge>
+            </EuiText>
             <EuiText>
               <ul>
                 <li><b>CSCI 256:</b> Algorithm Design and Analysis (B+)</li>
@@ -581,6 +593,9 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             id="accordion"
             buttonContent="Fall 2019 - Columbia University"
             paddingSize="l">
+            <EuiText textAlign='right'>
+              <EuiBadge color="secondary" iconType="user">GPA: 3.64</EuiBadge>
+            </EuiText>
             <EuiText>
               <ul>
                 <li><b>COMS 3157:</b> Advanced Programming (B+)</li>
@@ -595,6 +610,9 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             id="accordion"
             buttonContent="Spring 2020"
             paddingSize="l">
+            <EuiText textAlign='right'>
+              <EuiBadge color="secondary" iconType="user">GPA: n/a</EuiBadge>
+            </EuiText>
             <EuiText>
               <ul>
                 <li><b>CSCI 326:</b> Software Methods (P)</li>
@@ -608,6 +626,9 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             id="accordion"
             buttonContent="Fall 2020"
             paddingSize="l">
+            <EuiText textAlign='right'>
+              <EuiBadge color="secondary" iconType="user">GPA: 3.89</EuiBadge>
+            </EuiText>
             <EuiText>
               <ul>
                 <li><b>CSCI 334:</b> Principles of Programming Languages (A-)</li>
