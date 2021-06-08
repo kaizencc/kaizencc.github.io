@@ -458,8 +458,8 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             <EuiText size="s">
               <ul>
                 <li>Deans List, GPA: 3.65. Computer Science GPA: 3.77.</li>
-                <li>Computer Science: Programming Languages, Software Methods, Theory of Computation, Algorithm Design, Applied Algos, Data Structures. </li>
-                <li>Math: Graph Theory, Linear Algebra, Discrete Math, Econometrics.</li>
+                <li>Computer Science: Theory of Computation, Programming Languages, Software Methods, Algorithm Design, Human AI Interaction, Applied Algos, Data Structures. </li>
+                <li>Math: Graph Theory, Linear Algebra, Discrete Math, Econometrics, Multivariable Calculus.</li>
               </ul>
             </EuiText>
             </EuiCard>
