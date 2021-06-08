@@ -114,13 +114,13 @@ const App = () => {
           <PageSection title='About Me'>
             <EuiText>
               <p>
-                I am a senior at <b> Williams College</b> {' '}
+                I am a recent gradauate (May 2021) of <b> Williams College</b> {' '}
                 <EuiIcon
                   type={williamsSvg}
                   size='l'
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
                 />
-                 {' '} graduating with a bachelor of arts in Computer Science in May 2021.
+                 {' '} with a degree in Computer Science.
               </p>
 
               <p>
@@ -137,7 +137,7 @@ const App = () => {
                 <a href="https://github.com/aws/aws-cdk/pulls?q=is%3Apr+author%3Akaizen3031593">here</a>. 
               </p>
               <p>
-                Here are a few more highlights about me: I spent an inspirational "study abroad" semester at <b>Columbia University </b> 
+                Here are a few more accomplishments that I am most proud of: I spent an inspirational "study abroad" semester at <b>Columbia University </b> 
                 <EuiIcon 
                   type={columbia} 
                   size='l' 
@@ -152,8 +152,7 @@ const App = () => {
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
                 />
                 {' '}, where I help kids develop fundamental programming skills and train for the USA Computing Olympiad.
-                Outside of teaching, I moonlight as a Python curriculum developer and recruitment coordinator
-                for Juni Learning.
+            
               </p>
               <p>
                 Finally, I built and maintain the online multiplayer game <a href="https://cryptonight.codes/"><b>CryptoNight</b> </a>
@@ -458,7 +457,7 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
-                <li>Deans List, GPA: 3.58.</li>
+                <li>Deans List, GPA: 3.65. Computer Science GPA: 3.77.</li>
                 <li>Computer Science: Programming Languages, Software Methods, Theory of Computation, Algorithm Design, Applied Algos, Data Structures. </li>
                 <li>Math: Graph Theory, Linear Algebra, Discrete Math, Econometrics.</li>
               </ul>
@@ -644,13 +643,16 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             id="accordion"
             buttonContent="Spring 2021"
             paddingSize="l">
+            <EuiText textAlign='right'>
+              <EuiBadge color="secondary" iconType="user">GPA: 4.0</EuiBadge>
+            </EuiText>
             <EuiText>
               <ul>
-                <li><b>CSCI 361:</b> Theory of Computation</li>
-                <li><b>CSCI 378:</b> Human-AI Interaction</li>
-                <li><b>MATH 334:</b> Graph Theory</li>
-                <li><b>MUS 149:</b> The Language of Film Music</li>
-                <li><b>MUS 232:</b> Music in History: Classical and Romantic Music</li>
+                <li><b>CSCI 361:</b> Theory of Computation (A)</li>
+                <li><b>CSCI 378:</b> Human-AI Interaction (A)</li>
+                <li><b>MATH 334:</b> Graph Theory (A)</li>
+                <li><b>MUS 149:</b> The Language of Film Music (A)</li>
+                <li><b>MUS 232:</b> Music in History: Classical and Romantic Music (P)</li>
               </ul>
             </EuiText>
           </EuiAccordion>
