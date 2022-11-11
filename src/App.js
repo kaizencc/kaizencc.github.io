@@ -114,7 +114,8 @@ const App = () => {
           <PageSection title='About Me'>
             <EuiText>
               <p>
-                I am a recent gradauate (May 2021) of <b> Williams College</b> {' '}
+                I am currently a Software Development Engineer at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> on the fascinating {' '}
+                <b>Cloud Development Kit</b> team. I'm also a (relatively) recent gradauate (May 2021) of <b> Williams College</b> {' '}
                 <EuiIcon
                   type={williamsSvg}
                   size='l'
@@ -124,8 +125,8 @@ const App = () => {
               </p>
 
               <p>
-                I was a 2020 Software Development Engineer Intern at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> on the fascinating {' '}
-                <b>Cloud Development Kit</b> team and I'm happy to say that I'll be headed back to my team in August 2021 in NYC! The CDK team in a nutshell delivers an open-source, 
+                I was a 2020 Software Development Engineer Intern at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> on the CDK team as well.
+                The CDK team in a nutshell delivers an open-source, 
                 infrastructure-as-code framework that makes it easy to provision AWS resources within the safety of your favorite language - 
                 you can replace your unintutive JSON templates with a Python CDK stack! 
               </p>
