@@ -115,7 +115,7 @@ const App = () => {
             <EuiText>
               <p>
                 I am currently a Software Development Engineer at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> on the fascinating {' '}
-                <b>Cloud Development Kit</b> team. I'm also a (relatively) recent gradauate (May 2021) of <b> Williams College</b> {' '}
+                <b>Cloud Development Kit</b> team. I'm also a (relatively) recent graduate (May 2021) of <b> Williams College</b> {' '}
                 <EuiIcon
                   type={williamsSvg}
                   size='l'
