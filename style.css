@@ -72,6 +72,18 @@ nav {
   color: var(--accent);
 }
 
+.nav-cta a {
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  border-radius: 6px;
+  padding: 4px 12px;
+}
+
+.nav-cta a:hover {
+  background: var(--accent);
+  color: #fff !important;
+}
+
 /* ── Main content ────────────────────────────────────── */
 main {
   max-width: var(--max-w);
@@ -354,6 +366,56 @@ section {
   font-weight: 600;
 }
 
+/* ── Contact ─────────────────────────────────────────── */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.contact-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+.contact-card svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--accent);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-bottom: 4px;
+}
+
+.contact-card-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-card-value {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
 /* ── Footer ──────────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--border);
@@ -390,6 +452,7 @@ footer a:hover { color: var(--accent); }
   section { padding: 36px 0; }
 
   .projects-grid { grid-template-columns: 1fr; }
+  .contact-cards { grid-template-columns: 1fr; }
 
   .exp-header { flex-direction: column; gap: 2px; }
 
