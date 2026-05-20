@@ -203,34 +203,63 @@
   <section id="projects">
     <p class="section-label">Projects</p>
     <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-header">
-          <span class="project-name">CryptoNight Code Words Game</span>
+
+      <!-- SkyWatch — featured full-width card -->
+      <div class="project-card project-featured">
+        <img src="skywatch.png" alt="SkyWatch live flight tracker" class="project-img" />
+        <div class="project-body">
+          <div class="project-header">
+            <span class="project-name">SkyWatch</span>
+            <a href="https://github.com/kaizencc/skywatch" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+          </div>
+          <p class="project-date">2021 &middot; Personal</p>
+          <div class="chips" style="margin-bottom:12px;">
+            <span class="chip chip-neutral">Python</span>
+            <span class="chip chip-neutral">OpenSky Network</span>
+            <span class="chip chip-neutral">FlightAware</span>
+            <span class="chip chip-neutral">Mapbox</span>
+          </div>
+          <p class="project-desc">Live flight tracker with real-time AI narration. Pulls transponder data from the <strong>OpenSky Network</strong>, enriches each flight with <strong>FlightAware</strong> details, and renders aircraft on an interactive <strong>Mapbox</strong> map color-coded by status &mdash; arriving, departing, or cruising. Built for PyCon 2021: an AI spotter calls out interesting flights overhead as they appear.</p>
         </div>
-        <p class="project-date">Jan &ndash; Feb 2021 &middot; Personal</p>
-        <div class="chips" style="margin-bottom:12px;">
-          <span class="chip chip-neutral">JavaScript</span>
-          <span class="chip chip-neutral">Node.js</span>
-          <span class="chip chip-neutral">Express</span>
-          <span class="chip chip-neutral">Socket.io</span>
-          <span class="chip chip-neutral">MongoDB</span>
-          <span class="chip chip-neutral">AWS</span>
-          <span class="chip chip-neutral">nginx</span>
-        </div>
-        <p class="project-desc">Real-time multiplayer web game: users create/join rooms, live chat with command-based stats, team selection, live leaderboard, and Codenames game functionality. Deployed on AWS EC2 with Elastic IP + Route 53.</p>
       </div>
 
+      <!-- Ticket to Ride -->
       <div class="project-card">
-        <div class="project-header">
-          <span class="project-name">Ticket to Ride Board Builder</span>
+        <img src="ttr.png" alt="Ticket to Ride Board Builder iOS app" class="project-img project-img-portrait" />
+        <div class="project-body">
+          <div class="project-header">
+            <span class="project-name">Ticket to Ride Board Builder</span>
+            <a href="https://github.com/kaizencc/ttr-board-builder" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+          </div>
+          <p class="project-date">Mar &ndash; May 2020 &middot; Personal</p>
+          <div class="chips" style="margin-bottom:12px;">
+            <span class="chip chip-neutral">Swift</span>
+            <span class="chip chip-neutral">Xcode</span>
+          </div>
+          <p class="project-desc">iOS app with MVC architecture that lets users design custom railroad networks of cities and tracks. Implemented graph structure and Dijkstra&rsquo;s shortest-path from scratch.</p>
         </div>
-        <p class="project-date">Mar &ndash; May 2020 &middot; Personal</p>
-        <div class="chips" style="margin-bottom:12px;">
-          <span class="chip chip-neutral">Swift</span>
-          <span class="chip chip-neutral">Xcode</span>
-        </div>
-        <p class="project-desc">iOS app with MVC architecture that lets users design custom railroad networks of cities and tracks. Implemented graph structure and Dijkstra&rsquo;s shortest-path algorithm from scratch.</p>
       </div>
+
+      <!-- CryptoNight -->
+      <div class="project-card">
+        <img src="cryptonight.png" alt="CryptoNight Code Words multiplayer game" class="project-img" />
+        <div class="project-body">
+          <div class="project-header">
+            <span class="project-name">CryptoNight Code Words</span>
+            <a href="https://github.com/kaizencc/code-words-game" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+          </div>
+          <p class="project-date">Jan &ndash; Feb 2021 &middot; Personal</p>
+          <div class="chips" style="margin-bottom:12px;">
+            <span class="chip chip-neutral">JavaScript</span>
+            <span class="chip chip-neutral">Node.js</span>
+            <span class="chip chip-neutral">Socket.io</span>
+            <span class="chip chip-neutral">MongoDB</span>
+            <span class="chip chip-neutral">AWS EC2</span>
+          </div>
+          <p class="project-desc">Real-time multiplayer Codenames-inspired game with a superhero theme. Live rooms, team selection, command-based chat, and a live leaderboard over WebSockets. Deployed on AWS EC2 with Route 53.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
