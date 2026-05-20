@@ -375,6 +375,15 @@ section {
 }
 
 /* ── GitHub Contributions Chart ──────────────────────── */
+.gh-cards-row {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.gh-cards-row .gh-chart-wrap { flex: 2; }
+.gh-cards-row .gh-cdk-wrap   { flex: 1; }
+
 .gh-chart-wrap {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -505,6 +514,7 @@ footer a:hover { color: var(--accent); }
 
   section { padding: 36px 0; }
 
+  .gh-cards-row { flex-direction: column; }
   .projects-grid { grid-template-columns: 1fr; }
   .contact-cards { grid-template-columns: 1fr; }
 
