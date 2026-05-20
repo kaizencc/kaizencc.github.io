@@ -117,10 +117,18 @@ main {
   margin-bottom: 6px;
 }
 
+.hero-bio {
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 .hero-subtitle {
   font-size: 1.05rem;
   color: var(--muted);
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .hero-links {
@@ -364,6 +372,122 @@ section {
 
 .interests-row strong {
   font-weight: 600;
+}
+
+/* ── Activity Feed ───────────────────────────────────── */
+.activity-orgs {
+  font-size: 0.825rem;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.activity-orgs a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.activity-orgs a:hover { text-decoration: underline; }
+
+.activity-feed {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-item {
+  display: flex;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+.activity-item:last-child { border-bottom: none; }
+
+.activity-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+.activity-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.activity-icon--pr   { background: #dbeafe; }
+.activity-icon--pr svg { fill: #1d4ed8; }
+.activity-icon--merge { background: var(--accent-light); }
+.activity-icon--merge svg { fill: var(--accent); }
+.activity-icon--commit { background: #f3f4f6; }
+.activity-icon--commit svg { fill: #374151; }
+.activity-icon--issue { background: #fef3c7; }
+.activity-icon--issue svg { fill: #d97706; }
+
+.activity-body { flex: 1; min-width: 0; }
+
+.activity-line {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-bottom: 3px;
+}
+
+.activity-event-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-right: 5px;
+}
+
+.activity-title {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+.activity-title:hover { color: var(--accent); text-decoration: underline; }
+
+.activity-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.activity-repo {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+.activity-repo:hover { color: var(--accent); }
+
+.activity-loading,
+.activity-empty {
+  font-size: 0.875rem;
+  color: var(--muted);
+  padding: 10px 0;
+}
+
+/* ── Interest Tags ────────────────────────────────────── */
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.interest-tag {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.825rem;
+  font-weight: 500;
 }
 
 /* ── Contact ─────────────────────────────────────────── */
