@@ -3,14 +3,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #f8f8f6;
-  --text: #1a1a1a;
-  --accent: #15803d;
-  --accent-light: #dcfce7;
-  --muted: #6b7280;
-  --border: #e5e7eb;
-  --card-bg: #ffffff;
-  --nav-bg: #ffffff;
+  --bg: #0d1117;
+  --text: #e6edf3;
+  --accent: #3fb950;
+  --accent-light: #1a3a27;
+  --muted: #7d8590;
+  --border: #30363d;
+  --card-bg: #161b22;
+  --nav-bg: #0d1117;
   --max-w: 860px;
 }
 
@@ -81,7 +81,7 @@ nav {
 
 .nav-cta a:hover {
   background: var(--accent);
-  color: #fff !important;
+  color: #0d1117 !important;
 }
 
 /* ── Main content ────────────────────────────────────── */
@@ -234,8 +234,8 @@ section {
 }
 
 .chip-neutral {
-  background: #f3f4f6;
-  color: #374151;
+  background: #21262d;
+  color: #adbac7;
 }
 
 .exp-bullets {
@@ -322,7 +322,7 @@ section {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
 .project-header {
@@ -411,8 +411,8 @@ section {
 }
 
 .interest-tag {
-  background: #f3f4f6;
-  color: #374151;
+  background: #21262d;
+  color: #adbac7;
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 4px 12px;
