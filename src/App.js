@@ -47,7 +47,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const App = () => {
-  const sections = ['About Me', 'Experience', 'Projects', 'Education', 'Coursework', 'Extracurriculars', 'Contact Me'];
+  const sections = ['About Me', 'Experience', 'Languages & Tools', 'Projects', 'Education', 'Coursework', 'Extracurriculars', 'Contact Me'];
 
   const toHref = (title) => {
     return '#' + title.toLowerCase().split(' ').join('-');
@@ -114,58 +114,57 @@ const App = () => {
           <PageSection title='About Me'>
             <EuiText>
               <p>
-                I am currently a Software Development Engineer at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> on the fascinating {' '}
-                <b>Cloud Development Kit</b> team. I'm also a (relatively) recent gradauate (May 2021) of <b> Williams College</b> {' '}
+                I'm a Software Development Engineer at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> on the {' '}
+                <b>Cloud Development Kit</b> team — AWS's open-source infrastructure-as-code platform with 4M+ weekly downloads.
+                I joined AWS full-time in August 2021 after graduating from <b> Williams College</b> {' '}
                 <EuiIcon
                   type={williamsSvg}
                   size='l'
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
                 />
-                 {' '} with a degree in Computer Science.
+                {' '} with a degree in Computer Science, and was promoted to SDE II in 2022.
               </p>
 
               <p>
-                I was a 2020 Software Development Engineer Intern at <b> Amazon Web Services </b> <EuiIcon type='logoAWS' size='l' /> on the CDK team as well.
-                The CDK team in a nutshell delivers an open-source, 
-                infrastructure-as-code framework that makes it easy to provision AWS resources within the safety of your favorite language - 
-                you can replace your unintutive JSON templates with a Python CDK stack! 
-              </p>
-              <p>  
-                During my time at AWS, I pushed impactful features to production in AWS Lambda, Application Autoscaling, CloudWatch, StepFunctions, and more - my contribution was
-                maximized because I became an <b>AWS Certified Cloud Practitioner</b> prior to my internship. 
-                My intern project consisted of designing, pitching, and implementing an ergonomic API construct for 
-                AWS CloudWatch Synthetics. You can take a look at my open-source work, including my project, {' '}
-                <a href="https://github.com/aws/aws-cdk/pulls?q=is%3Apr+author%3Akaizen3031593">here</a>. 
+                On CDK, I've designed and shipped foundational systems used across the Dev Tools org: a telemetry service for the CDK CLI
+                serving 100k+ invocations/hour, the validation framework that powers <a href="https://github.com/cdklabs/cdk-nag">cdk-nag</a> and
+                10+ other third-party plugins, and a re-architecture of the <a href="https://constructs.dev/">Construct Hub</a> npm ingestion
+                workflow on Lambda + StepFunctions. I also own <a href="https://github.com/cdklabs/cdk-pipelines-github">cdk-pipelines-github</a> end-to-end —
+                a CI/CD platform for deploying CDK apps via GitHub Workflows with 20k+ weekly downloads.
               </p>
               <p>
-                Here are a few more accomplishments that I am most proud of: I spent an inspirational "study abroad" semester at <b>Columbia University </b> 
-                <EuiIcon 
-                  type={columbia} 
-                  size='l' 
+                More recently, I've been building <b>reveries</b>, a continuous-learning AI subsystem for <b>Kiro AI</b> that observes developer
+                sessions, detects personal patterns, and builds a per-user library of "instincts" that make Kiro better over time.
+                I also designed <a href="https://github.com/cdklabs/cdk-merit-badgers">CDK Merit Badgers</a>, an incentive system that
+                assigns a badge to every open-source contribution we receive and guides beginning contributors toward mentorship.
+              </p>
+              <p>
+                Before AWS, I spent an inspirational "study abroad" semester at <b>Columbia University </b>
+                <EuiIcon
+                  type={columbia}
+                  size='l'
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
-                /> 
-                {' '} where I took four tough CS classes and solidified my love for the discipline.
-                I also teach computer science online as a {' '}
+                />
+                {' '} taking four tough CS classes that solidified my love for the discipline, and taught CS online as a {' '}
                 <b>Senior Instructor</b> at <b>Juni Learning</b>{' '}
                 <EuiIcon
                   type={juniSvg}
                   size='l'
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
                 />
-                {' '}, where I help kids develop fundamental programming skills and train for the USA Computing Olympiad.
-            
+                {' '} from 2019 through 2021 — helping kids build fundamentals and train for the USA Computing Olympiad.
               </p>
               <p>
-                Finally, I built and maintain the online multiplayer game <a href="https://cryptonight.codes/"><b>CryptoNight</b> </a>
-                <EuiIcon 
-                  type={cryptonight} 
-                  size='l' 
+                On the side, I built and maintain the online multiplayer game <a href="https://cryptonight.codes/"><b>CryptoNight</b> </a>
+                <EuiIcon
+                  type={cryptonight}
+                  size='l'
                   style={{ display: 'inline', margin: 0, width: 'auto' }}
-                /> 
-                , a superhero-themed version of Codenames. It runs on an AWS EC2 instance, Elastic IP, and Route 53 Hosted Zone,
-                proving that I can be both a customer and a developer for AWS!
+                />
+                , a superhero-themed take on Codenames. It runs on an AWS EC2 instance with an Elastic IP and Route 53 Hosted Zone —
+                I get to be both a customer and a developer for AWS.
               </p>
-              <p>Lets connect! Feel free to contact me at zen.conroy@gmail.com.</p>
+              <p>Let's connect! Feel free to reach out at zen.conroy@gmail.com.</p>
             </EuiText>
           </PageSection>
           <EuiSpacer />
@@ -176,26 +175,38 @@ const App = () => {
             <EuiCard
             layout="horizontal"
             icon={<EuiIcon type='logoAWS' size='xxl' />}
-            title="Software Development Engineer"
-            description="Amazon Web Services, August 2021">
+            title="Software Development Engineer I & II"
+            description="Amazon Web Services, August 2021 - Present">
             <EuiFlexGroup wrap responsive={false} gutterSize="xs">
               <EuiFlexItem grow={false}>
                 <EuiBadge color="primary">TypeScript</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">Git</EuiBadge>
+                <EuiBadge color="primary">Rust</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="secondary">Jest</EuiBadge>
+                <EuiBadge color="primary">Python</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="secondary">AWS Certified Cloud Practitioner</EuiBadge>
+                <EuiBadge color="secondary">AWS</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="secondary">Kiro AI</EuiBadge>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="secondary">Claude</EuiBadge>
               </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
-                <li>Returning to the CDK team in August to continue my work on the CDK Construct Library.</li>
+                <li>Promoted to SDE II in 2022 on the <a href="https://github.com/aws/aws-cdk">Cloud Development Kit</a> team — AWS's infrastructure-as-code platform with 4M+ weekly downloads.</li>
+                <li>Designed and built a telemetry service for CDK CLI serving 100k+ invocations/hour; provides real-time usage metrics and alerts the team to regressions within 15 minutes. Now a foundational shared service consumed across the Dev Tools org.</li>
+                <li>Architected CDK's validation framework integrating default, 3rd-party, and bespoke annotations into a single layer with suppression and auditing support for enterprises. 10+ external plugins built on the framework including <a href="https://github.com/cdklabs/cdk-nag">cdk-nag</a> (250k weekly downloads).</li>
+                <li>Re-architected the failing npm ingestion workflow in <a href="https://constructs.dev/">Construct Hub</a> (catalogs 3k+ CDK constructs) to a robust AWS Lambda / StepFunctions architecture that protects against eventual-consistency bugs that caused frequent missed package updates.</li>
+                <li>Developed <b>reveries</b>, a continuous-learning AI subsystem for Kiro AI that observes developer sessions, detects personal patterns, and builds a per-user library of "instincts" that make Kiro AI better over time.</li>
+                <li>Own <a href="https://github.com/cdklabs/cdk-pipelines-github">cdk-pipelines-github</a> end-to-end — a CI/CD platform for deploying CDK apps via GitHub Workflows. 27 unique open-source contributors, 381+ GitHub Stars, 20k+ weekly npm downloads.</li>
+                <li>Designed a bespoke incentive system called <a href="https://github.com/cdklabs/cdk-merit-badgers">CDK Merit Badgers</a> that assigns a badge to every open-source contribution received, plus workflows that guide beginning contributors to mentorship from tenured contributors.</li>
               </ul>
             </EuiText>
             </EuiCard>
@@ -218,20 +229,14 @@ const App = () => {
                 <EuiBadge color="warning">Git</EuiBadge>
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
-                <EuiBadge color="secondary">Jest</EuiBadge>
-              </EuiFlexItem>
-              <EuiFlexItem grow={false}>
                 <EuiBadge color="secondary">AWS Certified Cloud Practitioner</EuiBadge>
               </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
-                <li>Contributed​ features in Lambda, CloudWatch, Autoscaling, etc. for the open-source, infrastructure-as-code Cloud Development Kit. </li>
-                <li>Fully owned all phases of the software development lifecycle for new CDK Construct modelling AWS CloudWatch Synthetics,
-launching​ it in Developer Preview a month ahead of schedule. </li>
-                <li>Built a reference ​app​ using the CDK framework for AWS Synthetics demonstrating its integration with AWS CodePipeline for
-enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, and SNS. </li>
+                <li>Fully owned all phases of the software development lifecycle for a new CDK Construct modeling AWS CloudWatch Synthetics, launching it in Developer Preview a month ahead of schedule.</li>
+                <li>Built a reference app using the CDK framework for AWS Synthetics demonstrating integration with AWS CodePipeline for enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, and SNS.</li>
               </ul>
             </EuiText>
             </EuiCard>
@@ -244,8 +249,8 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
             <EuiCard
             layout="horizontal"
             icon={<EuiIcon type={juniSvg} size='xxl' />}
-            title="Senior Computer Science Instructor II"
-            description="Juni Learning, January 2019 - Present">
+            title="Senior Computer Science Instructor"
+            description="Juni Learning, January 2019 - August 2021">
             <EuiFlexGroup wrap responsive={false} gutterSize="xs">
               <EuiFlexItem grow={false}>
                 <EuiBadge color="primary">Python</EuiBadge>
@@ -253,42 +258,72 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
               <EuiFlexItem grow={false}>
                 <EuiBadge color="primary">Java</EuiBadge>
               </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiBadge color="primary">C++</EuiBadge>
+              </EuiFlexItem>
             </EuiFlexGroup>
             <EuiSpacer size="m" />
             <EuiText size="s">
               <ul>
-                <li>Cultivating student understanding in data structures, AP Computer Science, and USA Computing Olympiad (Bronze/Silver).</li>
-                <li>Developing ​curriculum​ for new Python Algorithms course, conducting diagnostic trial lessons, screening instructor applicants.</li>
+                <li>Cultivated student understanding in data structures, AP Computer Science, and USA Computing Olympiad (Bronze &amp; Silver).</li>
+                <li>Developed curriculum for a new Python Algorithms course, conducted diagnostic trial lessons, screened instructor applicants.</li>
               </ul>
             </EuiText>
             </EuiCard>
           </EuiFlexGroup>
-
+          </PageSection>
           <EuiSpacer />
-          <EuiSpacer />
 
-          <EuiFlexGroup gutterSize='l'>
-            <EuiCard
-            layout="horizontal"
-            icon={<EuiIcon type={williamsSvg} size='xxl' />}
-            title="Computer Science Teaching Assistant"
-            description="Williams College CS Department, January 2019 - May 2019">
+          <PageSection title='Languages & Tools'>
+            <EuiText>
+              <p><b>Languages</b></p>
+              <p>Proficient:</p>
+            </EuiText>
             <EuiFlexGroup wrap responsive={false} gutterSize="xs">
-              <EuiFlexItem grow={false}>
-                <EuiBadge color="primary">Java</EuiBadge>
-              </EuiFlexItem>
-              <EuiFlexItem grow={false}>
-                <EuiBadge color="warning">Git</EuiBadge>
-              </EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="primary">TypeScript</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="primary">Python</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="primary">Rust</EuiBadge></EuiFlexItem>
             </EuiFlexGroup>
-            <EuiSpacer size="m" />
-            <EuiText size="s">
-              <ul>
-                <li>Led T.A. sessions for ​Data Structures in Java​ course reinforcing topics like searching/sorting algorithms, hash tables, and graphs.</li>
-              </ul>
+            <EuiSpacer size="s" />
+            <EuiText>
+              <p>Experienced:</p>
             </EuiText>
-            </EuiCard>
-          </EuiFlexGroup>
+            <EuiFlexGroup wrap responsive={false} gutterSize="xs">
+              <EuiFlexItem grow={false}><EuiBadge color="hollow">Java</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="hollow">JavaScript</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="hollow">C/C++</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="hollow">Swift</EuiBadge></EuiFlexItem>
+            </EuiFlexGroup>
+            <EuiSpacer />
+            <EuiText>
+              <p><b>Cloud (AWS)</b></p>
+            </EuiText>
+            <EuiFlexGroup wrap responsive={false} gutterSize="xs">
+              <EuiFlexItem grow={false}><EuiBadge color="secondary">Lambda</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="secondary">SQS</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="secondary">SNS</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="secondary">DynamoDB</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="secondary">StepFunctions</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="secondary">Kinesis</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="secondary">Glue</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="secondary">CodePipeline</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="secondary">CDK</EuiBadge></EuiFlexItem>
+            </EuiFlexGroup>
+            <EuiSpacer />
+            <EuiText>
+              <p><b>Tools</b></p>
+            </EuiText>
+            <EuiFlexGroup wrap responsive={false} gutterSize="xs">
+              <EuiFlexItem grow={false}><EuiBadge color="warning">CDK</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="warning">Terraform</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="warning">Node.js</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="warning">GraphQL</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="warning">REST</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="warning">Git</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="warning">GitHub Workflows</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="warning">Docker</EuiBadge></EuiFlexItem>
+              <EuiFlexItem grow={false}><EuiBadge color="warning">Claude</EuiBadge></EuiFlexItem>
+            </EuiFlexGroup>
           </PageSection>
           <EuiSpacer />
 
@@ -347,7 +382,7 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                       </EuiFlexItem>
                     </EuiFlexGroup>
                   }
-                  footer={<EuiButton href="https://github.com/kaizen3031593/TTR-Board-Builder">See it</EuiButton>}
+                  footer={<EuiButton href="https://github.com/kaizencc/TTR-Board-Builder">See it</EuiButton>}
                 />
               </EuiFlexItem>
             </EuiFlexGroup>
@@ -407,7 +442,7 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                     </EuiFlexItem>
                   </EuiFlexGroup>
                 }
-                footer={<EuiButton href="https://github.com/kaizen3031593/Poker-Project">See it</EuiButton>}
+                footer={<EuiButton href="https://github.com/kaizencc/Poker-Project">See it</EuiButton>}
               />
             </EuiFlexItem>
             </EuiFlexGroup>
@@ -418,7 +453,7 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                   iconType="logoGithub"
                   color="text"
                   size = "s"
-                  href="https://github.com/kaizen3031593">
+                  href="https://github.com/kaizencc">
                 </EuiButtonEmpty>
               </p>
             </EuiText>
@@ -691,7 +726,7 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
               <EuiCard
                 icon={<EuiIcon size='xxl' type={wufo} />}
                 title='Williams Ultimate Frisbee Organization (WUFO)'
-                description='Captain (2020), Logistics Manager (2019), 2nd team All-region (2019).'
+                description='Captain (2020-21), 2021 Donovan Award finalist (top DIII player in the country), Logistics Manager (2019), 2nd team All-region (2019).'
               />
             </EuiFlexItem>
           </EuiFlexGroup>
@@ -735,8 +770,8 @@ enhanced CI/CD efforts. Used AWS Lambda, ApiGateway, CodePipeline, CloudWatch, a
                   iconType: () => makeIcon(faEnvelope),
                 },
                 {
-                  label: '@kaizen3031593',
-                  href: 'https://github.com/kaizen3031593',
+                  label: '@kaizencc',
+                  href: 'https://github.com/kaizencc',
                   color: "text",
                   iconType: () => makeIcon(faGithub),
                 },

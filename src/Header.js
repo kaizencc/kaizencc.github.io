@@ -9,7 +9,7 @@ import {
 } from '@elastic/eui';
 import PropTypes from 'prop-types';
 
-import resume from './kaizen_resume_sept_2024.pdf';
+import resume from './kaizen_conroy_resume_may_2026.pdf';
 
 const HeaderLink = ({ title }) => {
   const titleHref = () => {

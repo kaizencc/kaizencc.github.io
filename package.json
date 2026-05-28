@@ -1,7 +1,7 @@
 {
   "name": "kaizen",
   "version": "0.1.0",
-  "homepage": "https:///kaizen3031593.github.io/",
+  "homepage": "https://kaizencc.github.io/",
   "private": true,
   "dependencies": {
     "@elastic/datemath": "^5.0.3",
